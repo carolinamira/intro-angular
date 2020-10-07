@@ -19,8 +19,11 @@ export class LoginComponent implements OnInit {
   }
 
   entrar(){
-    this.authService.logar(this.userLogin).subscribe((resp: UserLogin) => {this.userLogin = resp})
+    this.authService.logar(this.userLogin).subscribe((resp: UserLogin) => {
+    this.userLogin = resp
     this.router.navigate(['/feed'])
     localStorage.setItem('token', this.userLogin.token)
+    })
+    
   }
 }
