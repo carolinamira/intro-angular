@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { OrderModule } from 'ngx-order-pipe';
-import { ModalModule } from 'ngx-bootstrap/modal';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,12 +14,7 @@ import { PerfilLateralComponent } from './perfil-lateral/perfil-lateral.componen
 import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { HttpClientModule } from '@angular/common/http';
-import { PostTemaComponent } from './post-tema/post-tema.component';
-import { PutPostagemComponent } from './put-postagem/put-postagem.component';
-import { PutTemaComponent } from './put-tema/put-tema.component';
-import { DeletePostagemComponent } from './delete-postagem/delete-postagem.component';
-import { DeleteTemaComponent } from './delete-tema/delete-tema.component';
-import { AlertasComponent } from './alertas/alertas.component'
+import { PostTemaComponent } from './post-tema/post-tema.component'
 
 @NgModule({
   declarations: [
@@ -32,12 +26,7 @@ import { AlertasComponent } from './alertas/alertas.component'
     PerfilLateralComponent,
     LoginComponent,
     CadastroComponent,
-    PostTemaComponent,
-    PutPostagemComponent,
-    PutTemaComponent,
-    DeletePostagemComponent,
-    DeleteTemaComponent,
-    AlertasComponent
+    PostTemaComponent
   ],
   imports: [
     BrowserModule,
@@ -45,8 +34,7 @@ import { AlertasComponent } from './alertas/alertas.component'
     FontAwesomeModule,
     FormsModule,
     HttpClientModule,
-    OrderModule,
-    ModalModule.forRoot()
+    OrderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
