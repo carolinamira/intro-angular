@@ -21,6 +21,6 @@ export class TemaService {
   }
 
   postTema(tema: Tema) {
-    return this.http.post('http://localhost/8080/tema', tema, this.token)
+    return this.http.post('http://localhost:8080/tema', tema, this.token)
   }
 }
